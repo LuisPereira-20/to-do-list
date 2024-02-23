@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./to do.css">
+</head>
+<body class="bg-blue-400 ">
+    <div class="flex flex-col">
+    <div class="justify-between items-center m-11">
+        <form 
+        class="bg-zinc-200 p-4 justify-center items-center rounded-[20px]" >
+            <div 
+            class="flex flex-col justify-center items-center gap-5">
+            <h1 
+            class="font-bold text-4xl justify-center items-center font-mono"> Lista de Tareas</h1>
+                <label class="text-lg font-semibold font-mono"
+                for="tarea">Agrega una Tarea</label>
+                <input 
+                class="p-2.5 w-2/5 justify-center items-center "
+                type="text"
+                id="add"
+                >
+                <button 
+                type="button"
+                onclick="agregar()"
+                id="agregar_btn"
+                class="bg-blue-400 text-base font-bold py-2 px-5 
+                rounded-[45px] hover:bg-blue-700">Agregar</button>
+            </div>
+        </form>
+    </div>
+    <div>
+        <form 
+        id="Tareas"
+        class="bg-zinc-200 p-4 ml-[128px] mr-[128px] rounded-[45px]"
+        action="">
+            <ul 
+        id="list-container"
+        class="font-mono font-semibold text-base gap-5">
+            
+            </ul>
+        </form>
+    </div>
+    </div>
+    <script src="./to do.js"></script>
+    <script></script>
+</body>
+</html>

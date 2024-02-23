@@ -1,0 +1,11 @@
+#eliminar{
+    background-color: red;
+    padding: 5px;
+    font-weight: 900;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li{
+    gap: 5px;
+}
