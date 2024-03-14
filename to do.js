@@ -21,12 +21,6 @@ function agregar(){
     ver_t()
 }
 
-document.addEventListener("keydown", function (e){
-    if((e).code == "enter"){
-        agregar()
-    }
-})
-
 function ver_t (){
     const task = document.getElementById("list-container");
     task.innerHTML = "";
@@ -34,12 +28,14 @@ function ver_t (){
         const li = document.createElement("li");
         li.textContent=`Tarea ${indice + 1 }: ${Tarea.descripcion}`;
         const eliminar_btn = document.createElement("button");
+        const pendiente_btn = document.createElement("button");
         eliminar_btn.id = 'eliminar';
         eliminar_btn.textContent = "X";
         eliminar_btn.onclick = () =>{
             list_container.splice(indice, 1);
             ver_t();
         }
+        pendiente_btn.id = LocalStorage
         li.appendChild(eliminar_btn);
         task.appendChild(li);
     });
